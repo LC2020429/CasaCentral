@@ -1,0 +1,143 @@
+.timeline-wrapper {
+  padding: 60px 0;
+  background: #fdfdfd;
+  overflow: hidden;
+}
+
+.timeline-main-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--primary-blue, #003a70);
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.timeline-container.horizontal {
+  position: relative;
+  padding: 40px 50px;
+  max-width: 100vw;
+}
+
+.timeline-line-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--primary-blue, #003a70), transparent);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.events-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding: 40px 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue, #003a70) #f0f0f0;
+}
+
+.events-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.events-scroll::-webkit-scrollbar-thumb {
+  background: var(--primary-blue, #003a70);
+  border-radius: 4px;
+}
+
+.timeline-event-h {
+  position: relative;
+  min-width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Alternar arriba y abajo */
+.timeline-event-h:nth-child(odd) {
+  flex-direction: column;
+}
+
+.timeline-event-h:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.event-marker-h {
+  width: 100px;
+  height: 40px;
+  background: white;
+  border: 2px solid var(--primary-blue, #003a70);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.event-year-h {
+  font-weight: 800;
+  color: var(--primary-blue, #003a70);
+}
+
+.event-content-h {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+  max-width: 280px;
+  transition: all 0.3s ease;
+}
+
+.timeline-event-h.active {
+  transform: scale(1.05);
+}
+
+.timeline-event-h.active .event-marker-h {
+  background: var(--primary-blue, #003a70);
+  transform: scale(1.1);
+}
+
+.timeline-event-h.active .event-year-h {
+  color: white;
+}
+
+.timeline-event-h.active .event-content-h {
+  box-shadow: 0 20px 40px rgba(0, 58, 112, 0.12);
+  border-color: var(--primary-blue, #003a70);
+}
+
+.event-category-h {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #d4af37;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.event-content-h h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.event-content-h p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .timeline-event-h {
+    min-width: 260px;
+  }
+}

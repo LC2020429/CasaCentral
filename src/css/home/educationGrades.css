@@ -1,0 +1,138 @@
+.edu-grades-section {
+  padding: 80px 24px;
+  background-color: #ffffff;
+}
+
+.edu-grades-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.edu-grades-main-title {
+  font-size: 2.8rem;
+  color: var(--primary-blue, #003a70);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edu-grades-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.edu-grades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.edu-grade-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-grade-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(0, 58, 112, 0.12);
+  border-color: var(--primary-blue, #003a70);
+}
+
+.edu-grade-icon-box {
+  width: 70px;
+  height: 70px;
+  background: rgba(0, 58, 112, 0.05);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--primary-blue, #003a70);
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.edu-grade-card:hover .edu-grade-icon-box {
+  background: var(--primary-blue, #003a70);
+  color: white;
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.edu-grade-card h3 {
+  font-size: 1.6rem;
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.edu-grade-desc {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.edu-grade-careers {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.edu-grade-careers h4 {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.edu-grade-careers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.edu-grade-careers li {
+  font-size: 0.95rem;
+  color: #718096;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.edu-grade-careers li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue, #003a70);
+}
+
+.edu-grade-btn {
+  background: white;
+  border: 2px solid var(--primary-blue, #003a70);
+  color: var(--primary-blue, #003a70);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edu-grade-card:hover .edu-grade-btn {
+  background: var(--primary-blue, #003a70);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .edu-grades-main-title {
+    font-size: 2.2rem;
+  }
+  .edu-grade-card {
+    padding: 30px;
+  }
+}
