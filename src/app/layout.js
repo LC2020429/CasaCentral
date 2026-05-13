@@ -16,7 +16,12 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Casa Central",
-  description: "Hermanas de la caridad",
+  description:
+    "Formación integral con valores vicentinos y excelencia académica desde 1945.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
