@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Casa Central - Portal Institucional 🏫
 
-## Getting Started
+Este es el repositorio oficial del sitio web moderno del **Instituto Normal Casa Central**. Un portal diseñado para centralizar la información académica, histórica y de obra social de la institución, ofreciendo una experiencia de usuario premium y herramientas interactivas de vanguardia.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Características Principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Diseño Premium & Responsive**: Interfaz moderna con animaciones fluidas, glassmorphism y una paleta de colores institucional (Azul Marino y Dorado).
+- **Gestión Educativa Interactiva**:
+  - Sección de **Diversificado** con menú dinámico para explorar carreras (Magisterio, Bachilleratos).
+  - Páginas detalladas para **Primaria** y **Básico** con enfoque en pilares de aprendizaje.
+- **Asistente Virtual con IA**: Chat en vivo integrado con la API de **Groq**, proporcionando respuestas precisas basadas en el contexto histórico y académico de la institución.
+- **Historia y Patrimonio**: Línea de tiempo interactiva que recorre el legado de Casa Central desde 1945.
+- **Sección de Banda Consolidada**: Espacio unificado para la historia, logros (Pentacampeonas) y metodología de la Banda Escolar.
+- **Portal de Donaciones**: Diseño visual enfocado en el impacto social (Comedor Solidario, Clínicas Médicas).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tecnologías Utilizadas
 
-## Learn More
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Biblioteca UI**: [React 19](https://reactjs.org/)
+- **Estilos**: CSS3 Personalizado (Vanilla CSS) para máxima flexibilidad.
+- **Iconografía**: [React Icons](https://react-icons.github.io/react-icons/) (Font Awesome / Material Design)
+- **IA**: [Groq API](https://groq.com/) (Llama 3.3 70B) para el soporte en vivo.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Instalación y Configuración
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sigue estos pasos para ejecutar el proyecto localmente:
 
-## Deploy on Vercel
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/LC2020429/CasaCentral.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Configurar variables de entorno:**
+   Crea un archivo `.env` en la raíz del proyecto y añade tu API Key de Groq:
+   ```env
+   ApiIa=tu_api_key_de_groq_aqui
+   ```
+
+4. **Ejecutar en modo desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Abrir en el navegador:**
+   Visita [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📂 Estructura del Proyecto
+
+- `src/app/`: Rutas y páginas principales del App Router.
+- `src/components/`: Componentes reutilizables (Navbar, Footer, LiveSupport, etc.).
+- `src/assets/`: Imágenes, logotipos y recursos visuales.
+- `src/css/`: Hojas de estilo modulares para cada sección.
+- `src/app/api/`: Endpoints de backend (Chat AI).
+
+---
+
+## 💙 Contribuciones
+
+Este proyecto fue desarrollado para modernizar la presencia digital de Casa Central. Si deseas contribuir con mejoras visuales o funcionales, por favor abre un *Pull Request* o reporta un *Issue*.
+
+---
+
+## 📜 Licencia
+
+© 2026 Instituto Normal Casa Central. Todos los derechos reservados.
