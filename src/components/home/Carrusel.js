@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import panel1 from "../../assets/images/panel1.jpg";
 import panel2 from "../../assets/images/panel2.png";
 import panel3 from "../../assets/images/panel3.png";
@@ -13,14 +14,17 @@ export const Carrusel = () => {
     {
       img: panel4,
       text: "Conoce nuestra historia",
+      link: "/sobre-nosotros",
     },
     {
       img: panel2,
-      text: "Descubre nuestros programas",
+      text: "Nuestra banda musical",
+      link: "/banda",
     },
     {
       img: panel3,
       text: "Únete a la comunidad normalista",
+      link: "/#educacion",
     },
   ];
 
@@ -36,6 +40,19 @@ export const Carrusel = () => {
 
   const next = () => setIndex((index + 1) % panels.length);
   const prev = () => setIndex((index - 1 + panels.length) % panels.length);
+
+  const handleLinkClick = (e, link) => {
+    if (link.startsWith("/#")) {
+      const id = link.substring(2);
+      const element = document.getElementById(id);
+      if (element) {
+        e.preventDefault();
+        element.scrollIntoView({ behavior: "smooth" });
+        // Actualizamos la URL sin saltar
+        window.history.pushState(null, "", link);
+      }
+    }
+  };
 
   return (
     <div className="carrusel-container">
@@ -70,7 +87,13 @@ export const Carrusel = () => {
               quality={100}
               sizes="100vw"
             />
-            <button>{panel.text}</button>
+            <Link
+              href={panel.link}
+              style={{ display: "contents" }}
+              onClick={(e) => handleLinkClick(e, panel.link)}
+            >
+              <button>{panel.text}</button>
+            </Link>
           </div>
         ))}
       </div>

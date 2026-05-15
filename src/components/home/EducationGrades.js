@@ -46,7 +46,7 @@ const EducationGrades = () => {
   ];
 
   return (
-    <section className="edu-grades-section">
+    <section id="educacion" className="edu-grades-section">
       <div className="edu-grades-container">
         <h2 className="edu-grades-main-title">Nuestra Oferta Académica</h2>
         <p className="edu-grades-subtitle">
@@ -79,4 +79,3 @@ const EducationGrades = () => {
 };
 
 export default EducationGrades;
-

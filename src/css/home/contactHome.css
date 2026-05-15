@@ -1,6 +1,7 @@
 .contact-home-section {
   padding: 80px 24px;
   background: linear-gradient(135deg, #f8fbff 0%, #edf2f7 100%);
+  scroll-margin-top: 100px;
 }
 
 .contact-home-container {
@@ -18,7 +19,7 @@
 }
 
 .contact-home-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;

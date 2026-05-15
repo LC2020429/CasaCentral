@@ -1,6 +1,7 @@
 .edu-grades-section {
   padding: 80px 24px;
   background-color: #ffffff;
+  scroll-margin-top: 100px;
 }
 
 .edu-grades-container {
@@ -106,7 +107,7 @@
 }
 
 .edu-grade-careers li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--primary-blue, #003a70);

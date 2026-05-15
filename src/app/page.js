@@ -1,6 +1,6 @@
-import Carrusel from '@/components/home/Carrusel'
-import EducationGrades from '@/components/home/EducationGrades'
-import ContactHome from '@/components/home/ContactHome'
+import Carrusel from "@/components/home/Carrusel";
+import EducationGrades from "@/components/home/EducationGrades";
+import ContactHome from "@/components/home/ContactHome";
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <EducationGrades />
       <ContactHome />
     </div>
-  )
+  );
 }
