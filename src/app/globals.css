@@ -3,7 +3,7 @@
 :root {
   --background: #f1f6fb;
   --foreground: #2c3e50;
-  
+
   /* Color Palette from Vite */
   --primary-blue: #1a3258;
   --secondary-blue: #152949;
@@ -27,6 +27,13 @@ body {
   background-color: var(--bg-light);
   color: var(--text-dark);
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 /* Animations */
@@ -85,4 +92,3 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
