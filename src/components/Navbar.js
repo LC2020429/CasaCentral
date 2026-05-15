@@ -61,7 +61,13 @@ export const Navbar = () => {
         className={`navBar-container ${hidden ? "nav-hidden" : ""}`}
       >
         <Link href="/" className="img-logo" style={{ textDecoration: "none" }}>
-          <Image src={logo} alt="Logo Casa Central" width={56} height={56} priority />
+          <Image
+            src={logo}
+            alt="Logo Casa Central"
+            width={56}
+            height={56}
+            priority
+          />
           <h1>Casa Central</h1>
         </Link>
         <div className="info-container">
@@ -75,7 +81,7 @@ export const Navbar = () => {
                 onClick={() => toggleSubMenu("educacion")}
                 aria-expanded={openSubMenu === "educacion"}
               >
-                Educacion
+                Educación
               </button>
               <ul
                 className={`sub-menu ${openSubMenu === "educacion" ? "open" : ""}`}
@@ -95,7 +101,7 @@ export const Navbar = () => {
                     className="sub-link link-anim"
                     onClick={() => setOpenSubMenu(null)}
                   >
-                    Basicos
+                    Básicos
                   </Link>
                 </li>
                 <li>

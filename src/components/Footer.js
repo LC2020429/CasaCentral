@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-column">
-          <h2>Educacion</h2>
+          <h2>Educación</h2>
           <ul>
             <li>
               <Link
@@ -62,7 +62,7 @@ export const Footer = () => {
                 href="/educacion/basicos"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                Basicos
+                Básicos
               </Link>
             </li>
             <li>
@@ -106,7 +106,7 @@ export const Footer = () => {
                 href="/#contacto"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                Direccion
+                Dirección
               </Link>
             </li>
             <li>
@@ -114,7 +114,7 @@ export const Footer = () => {
                 href="/#contacto"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                Telefono
+                Teléfono
               </Link>
             </li>
             <li>
@@ -122,7 +122,7 @@ export const Footer = () => {
                 href="/#contacto"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                Email
+                Correo
               </Link>
             </li>
           </ul>
